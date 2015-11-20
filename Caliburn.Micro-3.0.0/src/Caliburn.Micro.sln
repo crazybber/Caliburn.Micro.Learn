@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.Platform.Xam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.Platform.Core", "Caliburn.Micro.Platform\Caliburn.Micro.Platform.Core.csproj", "{0ECBE3D9-AED4-419D-A6E3-C53D5CE2A02A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.EamonTest", "..\Caliburn.Micro.EamonTest\Caliburn.Micro.EamonTest.csproj", "{716DDF06-431F-4ADA-BF42-DD28ABF6586A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +147,16 @@ Global
 		{0ECBE3D9-AED4-419D-A6E3-C53D5CE2A02A}.Release|x64.Build.0 = Release|Any CPU
 		{0ECBE3D9-AED4-419D-A6E3-C53D5CE2A02A}.Release|x86.ActiveCfg = Release|Any CPU
 		{0ECBE3D9-AED4-419D-A6E3-C53D5CE2A02A}.Release|x86.Build.0 = Release|Any CPU
+		{716DDF06-431F-4ADA-BF42-DD28ABF6586A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716DDF06-431F-4ADA-BF42-DD28ABF6586A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716DDF06-431F-4ADA-BF42-DD28ABF6586A}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{716DDF06-431F-4ADA-BF42-DD28ABF6586A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{716DDF06-431F-4ADA-BF42-DD28ABF6586A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{716DDF06-431F-4ADA-BF42-DD28ABF6586A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716DDF06-431F-4ADA-BF42-DD28ABF6586A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{716DDF06-431F-4ADA-BF42-DD28ABF6586A}.Release|ARM.ActiveCfg = Release|Any CPU
+		{716DDF06-431F-4ADA-BF42-DD28ABF6586A}.Release|x64.ActiveCfg = Release|Any CPU
+		{716DDF06-431F-4ADA-BF42-DD28ABF6586A}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
