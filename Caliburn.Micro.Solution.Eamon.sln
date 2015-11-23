@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.MEF.Demo.WPF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.MEF.Demo.Console", "Caliburn.Micro.MEF.Demo.Console\Caliburn.Micro.MEF.Demo.Console.csproj", "{3B59764E-A9C4-4DA8-9F96-716226F6BD8E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Caliburn.v.1.5", "Caliburn.v.1.5", "{1D618861-A75F-4D6E-B2BD-CFC00F416C9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootstrapperAndConventions", "BootstrapperAndConventions\BootstrapperAndConventions.csproj", "{299427F6-E34A-49EF-BF2F-48E041D7C48B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +187,16 @@ Global
 		{3B59764E-A9C4-4DA8-9F96-716226F6BD8E}.Release|ARM.ActiveCfg = Release|Any CPU
 		{3B59764E-A9C4-4DA8-9F96-716226F6BD8E}.Release|x64.ActiveCfg = Release|Any CPU
 		{3B59764E-A9C4-4DA8-9F96-716226F6BD8E}.Release|x86.ActiveCfg = Release|Any CPU
+		{299427F6-E34A-49EF-BF2F-48E041D7C48B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{299427F6-E34A-49EF-BF2F-48E041D7C48B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{299427F6-E34A-49EF-BF2F-48E041D7C48B}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{299427F6-E34A-49EF-BF2F-48E041D7C48B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{299427F6-E34A-49EF-BF2F-48E041D7C48B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{299427F6-E34A-49EF-BF2F-48E041D7C48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{299427F6-E34A-49EF-BF2F-48E041D7C48B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{299427F6-E34A-49EF-BF2F-48E041D7C48B}.Release|ARM.ActiveCfg = Release|Any CPU
+		{299427F6-E34A-49EF-BF2F-48E041D7C48B}.Release|x64.ActiveCfg = Release|Any CPU
+		{299427F6-E34A-49EF-BF2F-48E041D7C48B}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -195,5 +209,6 @@ Global
 		{0ECBE3D9-AED4-419D-A6E3-C53D5CE2A02A} = {266A0FDB-CA59-4E27-B258-9552E368BE46}
 		{FB6B7A28-DA0C-47EC-BC47-E57BDF33643C} = {EE02C6EF-551A-4FB9-81D8-5F707116EEBC}
 		{3B59764E-A9C4-4DA8-9F96-716226F6BD8E} = {EE02C6EF-551A-4FB9-81D8-5F707116EEBC}
+		{299427F6-E34A-49EF-BF2F-48E041D7C48B} = {1D618861-A75F-4D6E-B2BD-CFC00F416C9D}
 	EndGlobalSection
 EndGlobal

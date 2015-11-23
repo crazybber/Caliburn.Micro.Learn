@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{716DDF06-431F-4ADA-BF42-DD28ABF6586A}</ProjectGuid>
+    <ProjectGuid>{299427F6-E34A-49EF-BF2F-48E041D7C48B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Caliburn.Micro.Eamon.WPF</RootNamespace>
-    <AssemblyName>Caliburn.Micro.Eamon.WPF</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>BootstrapperAndConventions</RootNamespace>
+    <AssemblyName>BootstrapperAndConventions</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -34,10 +34,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Caliburn.Micro">
+      <HintPath>bin\Debug\Caliburn.Micro.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\MyCaliburn\bin\WPF\Debug\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
@@ -54,18 +65,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Windows\ContentWnd\ContentView.xaml.cs">
-      <DependentUpon>ContentView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\ContentWnd\ContentViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppBootstrapper.cs" />
-    <Compile Include="ShellView.xaml.cs">
-      <DependentUpon>ShellView.xaml</DependentUpon>
+    <Compile Include="MyBootstrapper.cs" />
+    <Compile Include="MyChildOneView.xaml.cs">
+      <DependentUpon>MyChildOneView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ShellViewModel.cs" />
-    <Compile Include="Interface\IShell.cs" />
+    <Compile Include="MyChildOneViewModel.cs" />
+    <Compile Include="MyMainView.xaml.cs">
+      <DependentUpon>MyMainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyMainViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -90,27 +100,14 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="ShellView.xaml">
+    <Page Include="MyChildOneView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\ContentWnd\ContentView.xaml">
+    <Page Include="MyMainView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Caliburn.Micro-3.0.0\src\Caliburn.Micro.Platform\Caliburn.Micro.Platform.NET45.csproj">
-      <Project>{ef2c0c7d-3ffe-4884-9aac-7622fee66809}</Project>
-      <Name>Caliburn.Micro.Platform.NET45</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Caliburn.Micro-3.0.0\src\Caliburn.Micro\Caliburn.Micro.csproj">
-      <Project>{6d772b52-da8f-4784-971a-4bf50cb6d306}</Project>
-      <Name>Caliburn.Micro</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

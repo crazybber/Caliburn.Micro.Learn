@@ -1,14 +1,15 @@
 ﻿
 
-namespace Caliburn.Micro.EamonTest
+namespace Caliburn.Micro.Eamon.WPF
 {
     /// <summary>
     /// Interaction logic for AppView.xaml
     /// </summary>
-    public partial class AppView {
-        public AppView()
+    public partial class ShellView {
+        public ShellView()
         {
             InitializeComponent();
         }
+
     }
 }
