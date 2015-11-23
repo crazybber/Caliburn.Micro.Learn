@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.Platform.Xam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.Platform.Core", "Caliburn.Micro-3.0.0\src\Caliburn.Micro.Platform\Caliburn.Micro.Platform.Core.csproj", "{0ECBE3D9-AED4-419D-A6E3-C53D5CE2A02A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.EamonTest", "Caliburn.Micro.EamonTest\Caliburn.Micro.EamonTest.csproj", "{716DDF06-431F-4ADA-BF42-DD28ABF6586A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.Eamon.WPF", "Caliburn.Micro.EamonTest\Caliburn.Micro.Eamon.WPF.csproj", "{716DDF06-431F-4ADA-BF42-DD28ABF6586A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MEF", "MEF", "{EE02C6EF-551A-4FB9-81D8-5F707116EEBC}"
 EndProject

@@ -8,7 +8,7 @@ namespace Caliburn.Micro.EamonTest
     {
         public AppBootstrapper()
         {
-            Initialize();
+            Initialize(); //very important 
         }
 
         protected override void OnStartup(object sender, StartupEventArgs e)
