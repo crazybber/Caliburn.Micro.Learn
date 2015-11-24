@@ -2,10 +2,14 @@
 
 
 
+using System.ComponentModel.Composition;
+using Caliburn.Micro.Eamon.WPF.Interface;
+
 namespace Caliburn.Micro.Eamon.WPF
 {
+    [Export(typeof(IShell))]
 
-    class ShellViewModel : Screen
+    public class ShellViewModel : PropertyChangedBase, IShell
     {
 
         private string tbInputName;
@@ -36,5 +40,9 @@ namespace Caliburn.Micro.Eamon.WPF
             // MessageBox.Show(string.Format("Hello {0}!", tbInputName)); //Don't do this in real life :)
         }
 
+        public void empty() {
+
+            throw new System.NotImplementedException();
+        }
     }
 }
