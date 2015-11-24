@@ -3,68 +3,68 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.Hello", "Caliburn.Micro.Hello\Caliburn.Micro.Hello.csproj", "{3777F0C7-CD1D-4964-AF3F-FFCBF61AA9B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.Hello", "Caliburn.Micro.Hello\Caliburn.Micro.Hello\Caliburn.Micro.Hello.csproj", "{3777F0C7-CD1D-4964-AF3F-FFCBF61AA9B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.BubblingAction", "..\Caliburn.Micro.BubblingAction\Caliburn.Micro.BubblingAction\Caliburn.Micro.BubblingAction.csproj", "{53F392A8-74A9-4AEC-AE87-4271877373B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.BubblingAction", "Caliburn.Micro.BubblingAction\Caliburn.Micro.BubblingAction\Caliburn.Micro.BubblingAction.csproj", "{53F392A8-74A9-4AEC-AE87-4271877373B3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Caliburn.Micro.Coroutines", "Caliburn.Micro.Coroutines", "{60DF5CE6-F0FF-4CD1-8BFA-8C1C83938C56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.Coroutines", "..\Caliburn.Micro.Coroutines\Caliburn.Micro.Coroutines\Caliburn.Micro.Coroutines.csproj", "{A7C0657A-0B1D-4E72-97A1-E616A9E07D56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.Coroutines", "Caliburn.Micro.Coroutines\Caliburn.Micro.Coroutines\Caliburn.Micro.Coroutines.csproj", "{A7C0657A-0B1D-4E72-97A1-E616A9E07D56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.Coroutines.External", "..\Caliburn.Micro.Coroutines\Caliburn.Micro.Coroutines.External\Caliburn.Micro.Coroutines.External.csproj", "{2400BC51-BF6A-4225-80A6-BC639ED73033}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.Coroutines.External", "Caliburn.Micro.Coroutines\Caliburn.Micro.Coroutines.External\Caliburn.Micro.Coroutines.External.csproj", "{2400BC51-BF6A-4225-80A6-BC639ED73033}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host", "..\Caliburn.Micro.Coroutines\Host\Host.csproj", "{71B3BB3D-2B4F-4A3F-A0F9-8F697EE6054D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host", "Caliburn.Micro.Coroutines\Host\Host.csproj", "{71B3BB3D-2B4F-4A3F-A0F9-8F697EE6054D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloEventAggregator", "..\Caliburn.Micro.HelloEventAggregator\Caliburn.Micro.HelloEventAggregator\Caliburn.Micro.HelloEventAggregator.csproj", "{2CA84F43-5B28-4D73-9ABF-89DEB46E8EFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloEventAggregator", "Caliburn.Micro.HelloEventAggregator\Caliburn.Micro.HelloEventAggregator\Caliburn.Micro.HelloEventAggregator.csproj", "{2CA84F43-5B28-4D73-9ABF-89DEB46E8EFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloExplicitAction", "..\Caliburn.Micro.HelloExplicitAction\Caliburn.Micro.Hello\Caliburn.Micro.HelloExplicitAction.csproj", "{D357BAE6-E936-4B8E-BE24-C91DB67DCA57}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloExplicitAction", "Caliburn.Micro.HelloExplicitAction\Caliburn.Micro.Hello\Caliburn.Micro.HelloExplicitAction.csproj", "{D357BAE6-E936-4B8E-BE24-C91DB67DCA57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloMef", "..\Caliburn.Micro.HelloMef\Caliburn.Micro.HelloMef\Caliburn.Micro.HelloMef.csproj", "{2F32D4E9-DBDE-4B60-9FB1-B8E7A9C8E672}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloMef", "Caliburn.Micro.HelloMef\Caliburn.Micro.HelloMef\Caliburn.Micro.HelloMef.csproj", "{2F32D4E9-DBDE-4B60-9FB1-B8E7A9C8E672}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloParameters", "..\Caliburn.Micro.HelloParameters\Caliburn.Micro.HelloParameters\Caliburn.Micro.HelloParameters.csproj", "{FBA58DBE-7612-490E-8766-D45F839FE767}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloParameters", "Caliburn.Micro.HelloParameters\Caliburn.Micro.HelloParameters\Caliburn.Micro.HelloParameters.csproj", "{FBA58DBE-7612-490E-8766-D45F839FE767}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Caliburn.Micro.HelloPortable", "Caliburn.Micro.HelloPortable", "{CCD60123-8A74-41CE-B2B5-FF10D560BA36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloPortable.Portable", "..\Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable.Portable\Caliburn.Micro.HelloPortable.Portable.csproj", "{7D817598-0EA6-4D00-8B11-42B4769E27BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloPortable.Portable", "Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable.Portable\Caliburn.Micro.HelloPortable.Portable.csproj", "{7D817598-0EA6-4D00-8B11-42B4769E27BF}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Caliburn.Micro.HelloPortable.Shared", "..\Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable.Shared\Caliburn.Micro.HelloPortable.Shared.shproj", "{E2EC3D03-BC68-4A72-AD95-D6F7D55F5148}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Caliburn.Micro.HelloPortable.Shared", "Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable.Shared\Caliburn.Micro.HelloPortable.Shared.shproj", "{E2EC3D03-BC68-4A72-AD95-D6F7D55F5148}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloPortable.Windows", "..\Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable.Windows\Caliburn.Micro.HelloPortable.Windows.csproj", "{50B02AD4-6699-409E-AADB-EBCE459B36FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloPortable.Windows", "Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable.Windows\Caliburn.Micro.HelloPortable.Windows.csproj", "{50B02AD4-6699-409E-AADB-EBCE459B36FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloPortable.WindowsPhone", "..\Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable.WindowsPhone\Caliburn.Micro.HelloPortable.WindowsPhone.csproj", "{BB04E890-E6A3-4FA1-8147-5A17BFA2FD16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloPortable.WindowsPhone", "Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable.WindowsPhone\Caliburn.Micro.HelloPortable.WindowsPhone.csproj", "{BB04E890-E6A3-4FA1-8147-5A17BFA2FD16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloScreens", "..\Caliburn.Micro.HelloScreens\Caliburn.Micro.HelloScreens\Caliburn.Micro.HelloScreens.csproj", "{FE5DC5CB-D16A-4A4C-A0E5-92CB9C55C94D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloScreens", "Caliburn.Micro.HelloScreens\Caliburn.Micro.HelloScreens\Caliburn.Micro.HelloScreens.csproj", "{FE5DC5CB-D16A-4A4C-A0E5-92CB9C55C94D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloSimpleContainer", "..\Caliburn.Micro.HelloSimpleContainer\Caliburn.Micro.HelloSimpleContainer\Caliburn.Micro.HelloSimpleContainer.csproj", "{A47881F2-CC8D-4744-84CC-DFC6C2A5999E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloSimpleContainer", "Caliburn.Micro.HelloSimpleContainer\Caliburn.Micro.HelloSimpleContainer\Caliburn.Micro.HelloSimpleContainer.csproj", "{A47881F2-CC8D-4744-84CC-DFC6C2A5999E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloWindowManager", "..\Caliburn.Micro.HelloWindowManager\Caliburn.Micro.HelloWindowManager\Caliburn.Micro.HelloWindowManager.csproj", "{250F5661-596A-4D8A-9F45-6B76AEC79E3A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.HelloWindowManager", "Caliburn.Micro.HelloWindowManager\Caliburn.Micro.HelloWindowManager\Caliburn.Micro.HelloWindowManager.csproj", "{250F5661-596A-4D8A-9F45-6B76AEC79E3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.KeyBinding", "..\Caliburn.Micro.KeyBinding\Caliburn.Micro.KeyBinding\Caliburn.Micro.KeyBinding.csproj", "{41AABA12-FFAD-424D-BB8A-F7F1111EE6AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.KeyBinding", "Caliburn.Micro.KeyBinding\Caliburn.Micro.KeyBinding\Caliburn.Micro.KeyBinding.csproj", "{41AABA12-FFAD-424D-BB8A-F7F1111EE6AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.SimpleMDI", "..\Caliburn.Micro.SimpleMDI\Caliburn.Micro.SimpleMDI\Caliburn.Micro.SimpleMDI.csproj", "{50D9F822-15E6-4492-BD89-DF350566ADBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.SimpleMDI", "Caliburn.Micro.SimpleMDI\Caliburn.Micro.SimpleMDI\Caliburn.Micro.SimpleMDI.csproj", "{50D9F822-15E6-4492-BD89-DF350566ADBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.SimpleNavigation", "..\Caliburn.Micro.SimpleNavigation\Caliburn.Micro.SimpleNavigation\Caliburn.Micro.SimpleNavigation.csproj", "{EF8546AF-1D38-4F3F-AF88-942ECE42C565}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.SimpleNavigation", "Caliburn.Micro.SimpleNavigation\Caliburn.Micro.SimpleNavigation\Caliburn.Micro.SimpleNavigation.csproj", "{EF8546AF-1D38-4F3F-AF88-942ECE42C565}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.State", "..\Caliburn.Micro.State\Caliburn.Micro.State\Caliburn.Micro.State.csproj", "{285953CE-1132-4956-8C34-F993FDFF069D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.State", "Caliburn.Micro.State\Caliburn.Micro.State\Caliburn.Micro.State.csproj", "{285953CE-1132-4956-8C34-F993FDFF069D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.ViewFirst", "..\Caliburn.Micro.ViewFirst\Caliburn.Micro.ViewFirst\Caliburn.Micro.ViewFirst.csproj", "{76401E42-7302-4C2E-BF5D-8313656629BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.ViewFirst", "Caliburn.Micro.ViewFirst\Caliburn.Micro.ViewFirst\Caliburn.Micro.ViewFirst.csproj", "{76401E42-7302-4C2E-BF5D-8313656629BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.WinFormsInterop", "..\Caliburn.Micro.WinFormsInterop\Caliburn.Micro.WinFormsInterop\Caliburn.Micro.WinFormsInterop.csproj", "{FFC90E95-3470-4F87-98B5-4EECA016AF75}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caliburn.Micro.WinFormsInterop", "Caliburn.Micro.WinFormsInterop\Caliburn.Micro.WinFormsInterop\Caliburn.Micro.WinFormsInterop.csproj", "{FFC90E95-3470-4F87-98B5-4EECA016AF75}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CM.HelloUniversal", "CM.HelloUniversal", "{86BCFFB3-3675-4B17-8AB1-030495D49091}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CM.HelloUniversal.Shared", "..\CM.HelloUniversal\CM.HelloUniversal\CM.HelloUniversal.Shared\CM.HelloUniversal.Shared.shproj", "{CFAB0456-4B49-4502-BFCC-6E5B4A7DB1FE}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CM.HelloUniversal.Shared", "CM.HelloUniversal\CM.HelloUniversal\CM.HelloUniversal.Shared\CM.HelloUniversal.Shared.shproj", "{CFAB0456-4B49-4502-BFCC-6E5B4A7DB1FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.HelloUniversal.Windows", "..\CM.HelloUniversal\CM.HelloUniversal\CM.HelloUniversal.Windows\CM.HelloUniversal.Windows.csproj", "{C37C10BD-1E25-4E50-B7FD-FFBEB8D78232}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.HelloUniversal.Windows", "CM.HelloUniversal\CM.HelloUniversal\CM.HelloUniversal.Windows\CM.HelloUniversal.Windows.csproj", "{C37C10BD-1E25-4E50-B7FD-FFBEB8D78232}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.HelloUniversal.WindowsPhone", "..\CM.HelloUniversal\CM.HelloUniversal\CM.HelloUniversal.WindowsPhone\CM.HelloUniversal.WindowsPhone.csproj", "{5E34C621-E20C-40FA-8E79-47EF6CF4629D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CM.HelloUniversal.WindowsPhone", "CM.HelloUniversal\CM.HelloUniversal\CM.HelloUniversal.WindowsPhone\CM.HelloUniversal.WindowsPhone.csproj", "{5E34C621-E20C-40FA-8E79-47EF6CF4629D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLibrary", "..\GameLibrary\GameLibrary\GameLibrary.csproj", "{477DEB3C-8B90-4C0D-9A3D-2644F123A84C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLibrary", "GameLibrary\GameLibrary\GameLibrary.csproj", "{477DEB3C-8B90-4C0D-9A3D-2644F123A84C}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		..\Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable.Shared\Caliburn.Micro.HelloPortable.Shared.projitems*{e2ec3d03-bc68-4a72-ad95-d6f7d55f5148}*SharedItemsImports = 13
-		..\CM.HelloUniversal\CM.HelloUniversal\CM.HelloUniversal.Shared\CM.HelloUniversal.Shared.projitems*{cfab0456-4b49-4502-bfcc-6e5b4a7db1fe}*SharedItemsImports = 13
+		Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable\Caliburn.Micro.HelloPortable.Shared\Caliburn.Micro.HelloPortable.Shared.projitems*{e2ec3d03-bc68-4a72-ad95-d6f7d55f5148}*SharedItemsImports = 13
+		CM.HelloUniversal\CM.HelloUniversal\CM.HelloUniversal.Shared\CM.HelloUniversal.Shared.projitems*{cfab0456-4b49-4502-bfcc-6e5b4a7db1fe}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
