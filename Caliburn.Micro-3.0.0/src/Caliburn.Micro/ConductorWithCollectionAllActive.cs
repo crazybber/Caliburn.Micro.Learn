@@ -10,7 +10,7 @@
         /// </summary>
         public partial class Collection {
             /// <summary>
-            /// An implementation of <see cref="IConductor"/> that holds on to many items wich are all activated.
+            /// An implementation of <see cref="IConductor"/> that holds on to many items which are all activated.
             /// </summary>
             public class AllActive : ConductorBase<T> {
                 private readonly BindableCollection<T> items = new BindableCollection<T>();
@@ -156,7 +156,7 @@
                 /// <summary>
                 /// Ensures that an item is ready to be activated.
                 /// </summary>
-                /// <param name="newItem"></param>
+                /// <param name="newItem">The item that is about to be activated.</param>
                 /// <returns>The item to be activated.</returns>
                 protected override T EnsureItem(T newItem) {
                     var index = items.IndexOf(newItem);

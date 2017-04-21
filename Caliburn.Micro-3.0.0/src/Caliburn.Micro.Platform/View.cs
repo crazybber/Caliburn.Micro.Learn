@@ -313,7 +313,10 @@ namespace Caliburn.Micro
                 var context = GetContext(targetLocation);
                 
                 var view = ViewLocator.LocateForModel(args.NewValue, targetLocation, context);
-
+                // Trialing binding before setting content in Xamarin Forms
+#if XFORMS
+                ViewModelBinder.Bind(args.NewValue, view, context);
+#endif
                 if (!SetContentProperty(targetLocation, view)) {
 
                     Log.Warn("SetContentProperty failed for ViewLocator.LocateForModel, falling back to LocateForModelType");
@@ -322,8 +325,9 @@ namespace Caliburn.Micro
 
                     SetContentProperty(targetLocation, view);
                 }
-
+#if !XFORMS
                 ViewModelBinder.Bind(args.NewValue, view, context);
+#endif
             }
             else {
                 SetContentProperty(targetLocation, args.NewValue);
@@ -383,16 +387,9 @@ namespace Caliburn.Micro
 
         private static string GetContentPropertyName(Type type) {
             var typeInfo = type.GetTypeInfo();
-            var contentProperty = typeInfo.CustomAttributes
-                .FirstOrDefault(a => a.AttributeType == typeof(ContentPropertyAttribute));
-
-            return contentProperty == null ?
-                DefaultContentPropertyName :
-#if XFORMS
-                contentProperty.ConstructorArguments[0].Value.ToString();
-#else
-                contentProperty.NamedArguments[0].TypedValue.Value.ToString();
-#endif
+            var contentProperty = typeInfo.GetCustomAttribute<ContentPropertyAttribute>();
+            
+            return contentProperty?.Name ?? DefaultContentPropertyName;
         }
 #else
         static bool SetContentPropertyCore(object targetLocation, object view) {
@@ -401,7 +398,7 @@ namespace Caliburn.Micro
                 var contentProperty = type.GetAttributes<ContentPropertyAttribute>(true)
                                           .FirstOrDefault() ?? DefaultContentProperty;
 
-                type.GetProperty(contentProperty.Name)
+                type.GetProperty(contentProperty?.Name ?? DefaultContentProperty.Name)
                     .SetValue(targetLocation, view, null);
 
                 return true;

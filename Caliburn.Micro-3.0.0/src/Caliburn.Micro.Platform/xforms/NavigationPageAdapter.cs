@@ -1,4 +1,6 @@
-﻿namespace Caliburn.Micro.Xamarin.Forms {
+﻿using System.Reflection;
+
+namespace Caliburn.Micro.Xamarin.Forms {
 
     using System;
     using System.Collections.Generic;
@@ -10,6 +12,7 @@
     /// </summary>
     public class NavigationPageAdapter : INavigationService {
         private readonly NavigationPage navigationPage;
+        private Page currentPage;
 
         /// <summary>
         /// Instantiates new instance of NavigationPageAdapter
@@ -17,32 +20,70 @@
         /// <param name="navigationPage">The navigation page to adapat</param>
         public NavigationPageAdapter(NavigationPage navigationPage) {
             this.navigationPage = navigationPage;
+
+            navigationPage.Pushed += OnPushed;
+            navigationPage.Popped += OnPopped;
+            navigationPage.PoppedToRoot += OnPoppedToRoot;
+        }
+
+        private void OnPoppedToRoot(object sender, NavigationEventArgs e)
+        {
+            DeactivateView(currentPage);
+            ActivateView(navigationPage.CurrentPage);
+
+            currentPage = navigationPage.CurrentPage;
+        }
+
+        private void OnPopped(object sender, NavigationEventArgs e)
+        {
+            DeactivateView(currentPage);
+            ActivateView(navigationPage.CurrentPage);
+
+            currentPage = navigationPage.CurrentPage;
+        }
+
+        private void OnPushed(object sender, NavigationEventArgs e)
+        {
+            DeactivateView(currentPage);
+            ActivateView(navigationPage.CurrentPage);
+
+            currentPage = navigationPage.CurrentPage;
+        }
+
+        /// <summary>
+        /// Allow Xamarin to navigate to a ViewModel backed by a view which is of type <see cref="T:Xamarin.Forms.ContentView"/> by adapting the result
+        /// to a <see cref="T:Xamarin.Forms.ContentPage"/>.
+        /// </summary>
+        /// <param name="view">The view to be adapted</param>
+        /// <param name="viewModel">The view model which is bound to the view</param>
+        /// <returns>The adapted ContentPage</returns>
+        protected virtual ContentPage CreateContentPage(ContentView view, object viewModel)
+        {
+            var page = new ContentPage { Content = view };
+
+            var hasDiplayName = viewModel as IHaveDisplayName;
+            if (hasDiplayName != null) {
+
+                var path = "DisplayName";
+                var property = typeof(IHaveDisplayName).GetRuntimeProperty(path);
+                ConventionManager.SetBinding(viewModel.GetType(), path, property, page, null, Page.TitleProperty);
+
+                page.BindingContext = viewModel;
+            }
+
+            return page;
         }
 
         private static void DeactivateView(BindableObject view)
         {
-            if (view == null)
-                return;
-
-            var deactivate = view.BindingContext as IDeactivate;
-
-            if (deactivate != null)
-            {
-                deactivate.Deactivate(false);
-            }
+            var deactivate = view?.BindingContext as IDeactivate;
+            deactivate?.Deactivate(false);
         }
 
         private static void ActivateView(BindableObject view)
         {
-            if (view == null)
-                return;
-
-            var activator = view.BindingContext as IActivate;
-
-            if (activator != null)
-            {
-                activator.Activate();
-            }
+            var activate = view?.BindingContext as IActivate;
+            activate?.Activate();
         }
 
         /// <summary>
@@ -139,8 +180,8 @@
         {
             var page = view as Page;
 
-            if (page == null)
-                throw new NotSupportedException(String.Format("{0} does not inherit from {1}.", view.GetType(), typeof(Page)));
+            if (page == null && !(view is ContentView))
+                throw new NotSupportedException(String.Format("{0} does not inherit from either {1} or {2}.", view.GetType(), typeof(Page), typeof(ContentView)));
 
             var viewModel = ViewModelLocator.LocateForView(view);
 
@@ -150,8 +191,10 @@
                 ViewModelBinder.Bind(viewModel, view, null);
             }
 
-            page.Appearing += (s, e) => ActivateView(page);
-            page.Disappearing += (s, e) => DeactivateView(page);
+            var contentView = view as ContentView;
+            if (contentView != null) {
+                page = CreateContentPage(contentView, viewModel);
+            }
 
             return navigationPage.PushAsync(page, animated);
         }
@@ -214,10 +257,7 @@
         private bool CanClose() {
             var view = navigationPage.CurrentPage;
 
-            if (view == null)
-                return true;
-
-            var guard = view.BindingContext as IGuardClose;
+            var guard = view?.BindingContext as IGuardClose;
 
             if (guard != null)
             {
